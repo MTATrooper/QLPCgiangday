@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbBBM = new System.Windows.Forms.ComboBox();
             this.txtDC = new System.Windows.Forms.TextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
@@ -54,7 +55,6 @@
             this.SDT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.DIACHI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MABM = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cbBBM = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGV)).BeginInit();
@@ -82,6 +82,15 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Giáo viên";
+            // 
+            // cbBBM
+            // 
+            this.cbBBM.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBBM.FormattingEnabled = true;
+            this.cbBBM.Location = new System.Drawing.Point(616, 125);
+            this.cbBBM.Name = "cbBBM";
+            this.cbBBM.Size = new System.Drawing.Size(162, 23);
+            this.cbBBM.TabIndex = 17;
             // 
             // txtDC
             // 
@@ -127,6 +136,7 @@
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(504, 129);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(52, 16);
@@ -136,6 +146,7 @@
             // labelControl5
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Location = new System.Drawing.Point(504, 87);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(48, 16);
@@ -145,6 +156,7 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Location = new System.Drawing.Point(504, 47);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(89, 16);
@@ -154,6 +166,7 @@
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(75, 132);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(67, 16);
@@ -163,6 +176,7 @@
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(75, 90);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(90, 16);
@@ -172,6 +186,7 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(75, 50);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(86, 16);
@@ -182,8 +197,8 @@
             // 
             this.btnHuy.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnHuy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHuy.Image = global::QLPCgiangday.Properties.Resources.remove;
-            this.btnHuy.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnHuy.ImageOptions.Image = global::QLPCgiangday.Properties.Resources.remove;
+            this.btnHuy.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnHuy.Location = new System.Drawing.Point(295, 465);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(111, 51);
@@ -195,8 +210,8 @@
             // 
             this.btnLuu.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnLuu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLuu.Image = global::QLPCgiangday.Properties.Resources.save;
-            this.btnLuu.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnLuu.ImageOptions.Image = global::QLPCgiangday.Properties.Resources.save;
+            this.btnLuu.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnLuu.Location = new System.Drawing.Point(126, 465);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(111, 51);
@@ -208,8 +223,8 @@
             // 
             this.btnXoa.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Image = global::QLPCgiangday.Properties.Resources.gnome_edit_delete_1_;
-            this.btnXoa.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnXoa.ImageOptions.Image = global::QLPCgiangday.Properties.Resources.gnome_edit_delete_1_;
+            this.btnXoa.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnXoa.Location = new System.Drawing.Point(216, 375);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(106, 51);
@@ -222,8 +237,8 @@
             this.btnSua.BackgroundImage = global::QLPCgiangday.Properties.Resources.edit;
             this.btnSua.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSua.Image = global::QLPCgiangday.Properties.Resources.edit;
-            this.btnSua.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnSua.ImageOptions.Image = global::QLPCgiangday.Properties.Resources.edit;
+            this.btnSua.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnSua.Location = new System.Drawing.Point(295, 284);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(111, 51);
@@ -237,8 +252,8 @@
             this.btnThem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnThem.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThem.Image = global::QLPCgiangday.Properties.Resources.button_white_add;
-            this.btnThem.ImageLocation = DevExpress.XtraEditors.ImageLocation.TopCenter;
+            this.btnThem.ImageOptions.Image = global::QLPCgiangday.Properties.Resources.button_white_add;
+            this.btnThem.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.TopCenter;
             this.btnThem.Location = new System.Drawing.Point(126, 284);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(111, 51);
@@ -258,6 +273,11 @@
             // 
             // dataGV
             // 
+            this.dataGV.Appearance.HeaderPanel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGV.Appearance.HeaderPanel.Options.UseFont = true;
+            this.dataGV.Appearance.Row.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGV.Appearance.Row.Options.UseFont = true;
+            this.dataGV.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.dataGV.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.STT,
             this.MAGV,
@@ -268,8 +288,9 @@
             this.MABM});
             this.dataGV.GridControl = this.gridGV;
             this.dataGV.Name = "dataGV";
-            this.dataGV.OptionsDetail.DetailMode = DevExpress.XtraGrid.Views.Grid.DetailMode.Default;
             this.dataGV.OptionsFind.AlwaysVisible = true;
+            this.dataGV.OptionsView.ShowGroupPanel = false;
+            this.dataGV.PaintStyleName = "UltraFlat";
             this.dataGV.CustomDrawCell += new DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventHandler(this.dataGV_CustomDrawCell);
             this.dataGV.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.dataGV_FocusedRowChanged);
             this.dataGV.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGV_KeyDown);
@@ -336,15 +357,6 @@
             this.MABM.Visible = true;
             this.MABM.VisibleIndex = 6;
             this.MABM.Width = 103;
-            // 
-            // cbBBM
-            // 
-            this.cbBBM.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbBBM.FormattingEnabled = true;
-            this.cbBBM.Location = new System.Drawing.Point(616, 125);
-            this.cbBBM.Name = "cbBBM";
-            this.cbBBM.Size = new System.Drawing.Size(162, 23);
-            this.cbBBM.TabIndex = 17;
             // 
             // ucGIAOVIEN
             // 
