@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A10D320F-BE89-4459-9047-302473115514}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLPCgiangday</RootNamespace>
+    <AssemblyName>QLPCgiangday</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.1" />
+    <Reference Include="DevExpress.Data.v19.1" />
+    <Reference Include="DevExpress.Office.v19.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Core" />
+    <Reference Include="DevExpress.RichEdit.v19.1.Export" />
+    <Reference Include="DevExpress.Printing.v19.1.Core" />
+    <Reference Include="DevExpress.Utils.v19.1" />
+    <Reference Include="DevExpress.XtraBars.v19.1" />
+    <Reference Include="DevExpress.Sparkline.v19.1.Core" />
+    <Reference Include="DevExpress.XtraEditors.v19.1" />
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="ConnectionExcell.cs" />
+    <Compile Include="DAO\DAO_BOMON.cs" />
+    <Compile Include="DAO\DAO_CHUCVU.cs" />
+    <Compile Include="DAO\DAO_GIAOVIEN.cs" />
+    <Compile Include="DAO\DAO_HEDT.cs" />
+    <Compile Include="DAO\DAO_CHUCDANH.cs" />
+    <Compile Include="DAO\DAO_HOCPHAN.cs" />
+    <Compile Include="DAO\DAO_KYHOC.cs" />
+    <Compile Include="DAO\DAO_LOPHP.cs" />
+    <Compile Include="DAO\DAO_MONHOC.cs" />
+    <Compile Include="DAO\DAO_PHANCONG.cs" />
+    <Compile Include="DAO\DAO_TKB.cs" />
+    <Compile Include="DAO\DAO_TRINHDODT.cs" />
+    <Compile Include="DATA\DAL_BOMON.cs" />
+    <Compile Include="DATA\DAL_CHUCVU.cs" />
+    <Compile Include="DATA\DAL_GIAOVIEN.cs" />
+    <Compile Include="DATA\DAL_HEDT.cs" />
+    <Compile Include="DATA\DAL_CHUCDANH.cs" />
+    <Compile Include="DATA\DAL_KYHOC.cs" />
+    <Compile Include="DATA\DAL_LOPHP.cs" />
+    <Compile Include="DATA\DAL_MONHOC.cs" />
+    <Compile Include="DATA\DAL_HOCPHAN.cs" />
+    <Compile Include="DATA\DAL_PHANCONG.cs" />
+    <Compile Include="DATA\DAL_TKB.cs" />
+    <Compile Include="DATA\DAL_TRINHDODT.cs" />
+    <Compile Include="GUI\Changepass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Changepass.Designer.cs">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Dangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Dangky.Designer.cs">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormHistory.Designer.cs">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPC.Designer.cs">
+      <DependentUpon>FormPC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Info.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportATTT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportATTT.Designer.cs">
+      <DependentUpon>ucImportATTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportCNM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportCNM.Designer.cs">
+      <DependentUpon>ucImportCNM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucBomon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucBomon.Designer.cs">
+      <DependentUpon>ucBomon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucGIAOVIEN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucGIAOVIEN.Designer.cs">
+      <DependentUpon>ucGIAOVIEN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucHH_CV.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucHH_CV.Designer.cs">
+      <DependentUpon>ucHH_CV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucHOCPHAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucHOCPHAN.Designer.cs">
+      <DependentUpon>ucHOCPHAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportCNPM.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportCNPM.Designer.cs">
+      <DependentUpon>ucImportCNPM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportHTTT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportHTTT.Designer.cs">
+      <DependentUpon>ucImportHTTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportKHMT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportKHMT.Designer.cs">
+      <DependentUpon>ucImportKHMT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportTOAN.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportTOAN.Designer.cs">
+      <DependentUpon>ucImportTOAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucImportTTMT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucImportTTMT.Designer.cs">
+      <DependentUpon>ucImportTTMT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucKYHOC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucKYHOC.Designer.cs">
+      <DependentUpon>ucKYHOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucLOPHP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucLOPHP.Designer.cs">
+      <DependentUpon>ucLOPHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucMONHOC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucMONHOC.Designer.cs">
+      <DependentUpon>ucMONHOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucPHANCONG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucPHANCONG.Designer.cs">
+      <DependentUpon>ucPHANCONG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucTD_HEDT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucTD_HEDT.Designer.cs">
+      <DependentUpon>ucTD_HEDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ucTKB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\ucTKB.Designer.cs">
+      <DependentUpon>ucTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\Changepass.resx">
+      <DependentUpon>Changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Dangky.resx">
+      <DependentUpon>Dangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormHistory.resx">
+      <DependentUpon>FormHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPC.resx">
+      <DependentUpon>FormPC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportATTT.resx">
+      <DependentUpon>ucImportATTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportCNM.resx">
+      <DependentUpon>ucImportCNM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucBomon.resx">
+      <DependentUpon>ucBomon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucGIAOVIEN.resx">
+      <DependentUpon>ucGIAOVIEN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucHH_CV.resx">
+      <DependentUpon>ucHH_CV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucHOCPHAN.resx">
+      <DependentUpon>ucHOCPHAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportCNPM.resx">
+      <DependentUpon>ucImportCNPM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportHTTT.resx">
+      <DependentUpon>ucImportHTTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportKHMT.resx">
+      <DependentUpon>ucImportKHMT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportTOAN.resx">
+      <DependentUpon>ucImportTOAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucImportTTMT.resx">
+      <DependentUpon>ucImportTTMT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucKYHOC.resx">
+      <DependentUpon>ucKYHOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucLOPHP.resx">
+      <DependentUpon>ucLOPHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucMONHOC.resx">
+      <DependentUpon>ucMONHOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucPHANCONG.resx">
+      <DependentUpon>ucPHANCONG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucTD_HEDT.resx">
+      <DependentUpon>ucTD_HEDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ucTKB.resx">
+      <DependentUpon>ucTKB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_white_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gnome_edit_delete%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
